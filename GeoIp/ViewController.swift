@@ -17,7 +17,6 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     mapView.centerCoordinate = .init(latitude: 0, longitude: 0)
-    downloadAPI()
   }
   
   @IBAction func searchButtonTap(_ sender: Any) {
@@ -25,29 +24,11 @@ class ViewController: UIViewController {
   }
 }
 
-extension ViewController {
+private extension ViewController {
   
-  /*
-   {
-      "status":"success",
-      "country":"Canada",
-      "countryCode":"CA",
-      "region":"QC",
-      "regionName":"Quebec",
-      "city":"Montreal",
-      "zip":"H1K",
-      "lat":45.6085,
-      "lon":-73.5493,
-      "timezone":"America/Toronto",
-      "isp":"Le Groupe Videotron Ltee",
-      "org":"Videotron Ltee",
-      "as":"AS5769 Videotron Telecom Ltee",
-      "query":"24.48.0.1"
-   }
-   */
-  
+  /// API documentation - https://ip-api.com/docs/api:json
   func downloadAPI() {
-    guard let url = URL(string: "http://ip-api.com/json/a24.48.0.1") else {
+    guard let url = URL(string: "http://ip-api.com/json/24.48.0.1") else {
       return
     }
     let task = URLSession.shared.dataTask(with: url ) { data, response, error in
@@ -71,7 +52,7 @@ extension ViewController {
   
   func showAlert() {
     let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
       // do something
       
     }))

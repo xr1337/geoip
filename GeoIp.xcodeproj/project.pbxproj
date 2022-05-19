@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C062165B2836D27000D8CC83 /* GeoReverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C062165A2836D27000D8CC83 /* GeoReverseViewController.swift */; };
 		C0B6682B2835A54A00E04FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6682A2835A54A00E04FA5 /* AppDelegate.swift */; };
 		C0B6682D2835A54A00E04FA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6682C2835A54A00E04FA5 /* SceneDelegate.swift */; };
 		C0B6682F2835A54A00E04FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6682E2835A54A00E04FA5 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C062165A2836D27000D8CC83 /* GeoReverseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoReverseViewController.swift; sourceTree = "<group>"; };
 		C0B668272835A54A00E04FA5 /* GeoIp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoIp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B6682A2835A54A00E04FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0B6682C2835A54A00E04FA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				C0B6682A2835A54A00E04FA5 /* AppDelegate.swift */,
 				C0B6682C2835A54A00E04FA5 /* SceneDelegate.swift */,
 				C0B6682E2835A54A00E04FA5 /* ViewController.swift */,
+				C062165A2836D27000D8CC83 /* GeoReverseViewController.swift */,
 				C0B6683E2835A56A00E04FA5 /* GeoData.swift */,
 				C0B668302835A54A00E04FA5 /* Main.storyboard */,
 				C0B668332835A54D00E04FA5 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				C0B6683F2835A56A00E04FA5 /* GeoData.swift in Sources */,
 				C0B6682F2835A54A00E04FA5 /* ViewController.swift in Sources */,
 				C0B6682B2835A54A00E04FA5 /* AppDelegate.swift in Sources */,
+				C062165B2836D27000D8CC83 /* GeoReverseViewController.swift in Sources */,
 				C0B6682D2835A54A00E04FA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
